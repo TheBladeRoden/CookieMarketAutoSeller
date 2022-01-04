@@ -1,34 +1,92 @@
 // ==UserScript==
 // @name         Cookie Auto Stonks Auto Seller
-// @namespace    http://thebladeroden.com/
+// namespace    http://thebladeroden.com/
 // @version      1.0
 // @description  Cookie Auto Stonks Auto Seller
 // @author       TheBladeRoden
 // @match        https://orteil.dashnet.org/cookieclicker/
-// @homepageURL  https://github.com/thebladeroden/CookieMarketAutoSeller
-// @supportURL   https://github.com/thebladeroden/CookieMarketAutoSeller/issues
+// @homepageURL  https://github.com/thebladeroden/Cookie-Stonks
+// @supportURL   https://github.com/thebladeroden/Cookie-Stonks/issues
+// @updateURL    https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/master/cookieStonks.user.js
 // @icon         https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/main/cookieDollar.png
 // @license      MIT
 // @grant        none
+// @include 		https://orteil.dashnet.org/cookieclicker/*
 // ==/UserScript==
 
-var stockMarket = Game.Objects['Bank'].minigame;
+/*Game.registerMod
+Game.LoadMod('https://klattmose.github.io/CookieClicker/' + (0 ? 'Beta/' : '') + 'CCSE.js');*/
 
-let i = 0;
-while (i < 10) {
-  task(i);
-   i++;
+/*const readyCheck = setInterval(() => {
+  const Game = unsafeWindow.Game;
+  if (typeof Game !== 'undefined' && typeof Game.ready !== 'undefined' && Game.ready) {
+    //Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+    //var stockMarket = Game.Objects['Bank'].minigame;
+    clearInterval(readyCheck);
+  }
+}, 1000);*/
+
+/*let stockMarket = Game.Objects['Bank'].minigame;
+function setstockMarket() {
+  stockMarket = Game.Objects['Bank'].minigame;
+}
+function getBankLevel() {
+  return Game.Objects['Bank'].level;
+}
+function getGoodsCount() {
+  if (Game.Objects['Bank'].minigameLoaded)
+    return stockMarket.goodsById.length;
+  else
+    return 0;
+}*/
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function task(i) {
-  setTimeout(function() {	
-      let sm = Game.Objects['Bank'].minigame;
+delayedLoading();
+
+async function delayedLoading() {
+	await sleep(2000);
+  console.log("It");
+  await sleep(2000);
+  console.log("Will");
+  await sleep(2000);
+  console.log("Now");
+  await sleep(2000);
+  console.log("Load");
+  {
+      let i = 0;
+  while (i < 10) {
+    console.log("Task cycle working"+i);
+    task(i);
+     i++;
+		}
+  }
+}
+
+async function task(i) {
+      let stockMarket = Game.Objects['Bank'].minigame;
     	console.log('Is this working at all?');
       for(let i = 0; i < 16/*sm.goodsById.length*/; i++) {
-        console.log(sm.goodsById[i].icon);
+        
+        console.log(stockMarket.goodsById[i].icon);
+        }
+    await sleep(1000);
+}
+
+
+
+/*function task(i) {
+  setTimeout(function() {	
+      let stockMarket = Game.Objects['Bank'].minigame;
+    	console.log('Is this working at all?');
+      for(let i = 0; i < 16/*sm.goodsById.length*//*; i++) {
+        
+        console.log(stockMarket.goodsById[i].icon);
         }
     }, 5000 * i);
-}
+}*/
 
 /*function task(i) {
   setTimeout(function() {
