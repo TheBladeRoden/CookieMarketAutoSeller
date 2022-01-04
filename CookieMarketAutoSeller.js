@@ -5,13 +5,11 @@
 // @description  Cookie Auto Stonks Auto Seller
 // @author       TheBladeRoden
 // @match        https://orteil.dashnet.org/cookieclicker/
-// @homepageURL  https://github.com/thebladeroden/Cookie-Stonks
-// @supportURL   https://github.com/thebladeroden/Cookie-Stonks/issues
-// @updateURL    https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/master/cookieStonks.user.js
+// @homepageURL  https://github.com/thebladeroden/CookieMarketAutoSeller
+// @supportURL   https://github.com/thebladeroden/CookieMarketAutoSeller/issues
 // @icon         https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/main/cookieDollar.png
 // @license      MIT
 // @grant        none
-// @include 		https://orteil.dashnet.org/cookieclicker/*
 // ==/UserScript==
 
 var stockMarket = Game.Objects['Bank'].minigame;
