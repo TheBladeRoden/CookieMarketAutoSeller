@@ -1,21 +1,12 @@
 // ==UserScript==
 // @name         Cookie Auto Stonks Auto Seller
-// namespace    http://thebladeroden.com/
-// @version      1.0
-// @description  Cookie Auto Stonks Auto Seller
-// @author       TheBladeRoden
-// @match        https://orteil.dashnet.org/cookieclicker/
-// homepageURL  https://github.com/thebladeroden/Cookie-Stonks
-// supportURL   https://github.com/thebladeroden/Cookie-Stonks/issues
-// updateURL    https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/master/cookieStonks.user.js
-// @icon         https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/main/cookieDollar.png
-// license      MIT
-// grant        none
-// include 		https://orteil.dashnet.org/cookieclicker/*
+// @include 		https://orteil.dashnet.org/cookieclicker/*
 // ==/UserScript==
 
-/*Game.registerMod
-Game.LoadMod('https://klattmose.github.io/CookieClicker/' + (0 ? 'Beta/' : '') + 'CCSE.js');*/
+console.log("Is it even starting to load?");
+
+Game.registerMod
+//Game.LoadMod('https://klattmose.github.io/CookieClicker/' + (0 ? 'Beta/' : '') + 'CCSE.js');*/
 
 /*const readyCheck = setInterval(() => {
   const Game = unsafeWindow.Game;
