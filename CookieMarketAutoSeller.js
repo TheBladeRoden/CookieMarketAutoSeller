@@ -5,16 +5,19 @@
 // @description  Cookie Auto Stonks Auto Seller
 // @author       TheBladeRoden
 // @match        https://orteil.dashnet.org/cookieclicker/
-// @homepageURL  https://github.com/thebladeroden/CookieMarketAutoSeller/
-// @supportURL   https://github.com/thebladeroden/CookieMarketAutoSeller/issues
-// @updateURL    https://thebladeroden.github.io/CookieMarketAutoSeller/CookieMarketAutoSeller.js
+// @homepageURL  https://github.com/thebladeroden/Cookie-Stonks
+// @supportURL   https://github.com/thebladeroden/Cookie-Stonks/issues
+// @updateURL    https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/master/cookieStonks.user.js
 // @icon         https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/main/cookieDollar.png
+// @license      MIT
+// @grant        none
 // @include 		https://orteil.dashnet.org/cookieclicker/*
 // ==/UserScript==
 
 console.log("Is it even starting to load?");
 
 Game.registerMod
+//Game.LoadMod('https://klattmose.github.io/CookieClicker/' + (0 ? 'Beta/' : '') + 'CCSE.js');*/
 
 /*const readyCheck = setInterval(() => {
   const Game = unsafeWindow.Game;
@@ -67,9 +70,11 @@ async function delayedLoading() {
 async function task(i) {
       let stockMarket = Game.Objects['Bank'].minigame;
     	console.log('Is this working at all?');
-      for(let i = 0; i < 16/*sm.goodsById.length*/; i++) {
+      for(let i = 0; i < stockMarket.goodsById.length; i++) {
         
         console.log(stockMarket.goodsById[i].icon);
+        var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[i])) / 100;
+        console.log(price);
         }
     await sleep(1000);
 }
@@ -154,6 +159,8 @@ function getCurrentValue(id, value, bankLevel) {
 		//console.log('The current value is ' + value + ' and ' + currentValue);
     return currentValue;
 }
+
+var price = Math.round(100 * M.getGoodPrice(M.goodsById[iG])) / 100;
 
 for(var iG = 0; iG < M.goodsById.length; iG++) {
   var good = M.goodsById[iG];
