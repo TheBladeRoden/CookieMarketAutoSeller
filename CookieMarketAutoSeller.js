@@ -49,13 +49,13 @@ function sleep(ms) {
 delayedLoading();
 
 async function delayedLoading() {
-	await sleep(2000);
+	await sleep(1000);
   console.log("It");
-  await sleep(2000);
+  await sleep(1000);
   console.log("Will");
-  await sleep(2000);
+  await sleep(1000);
   console.log("Now");
-  await sleep(2000);
+  await sleep(1000);
   console.log("Load");
   {
       let i = 0;
