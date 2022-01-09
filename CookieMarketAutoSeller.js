@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Cookie Auto Stonks Auto Seller
-// namespace    http://thebladeroden.com/
+// @Snamespace    http://thebladeroden.com/
 // @version      0.1
 // @description  Cookie Auto Stonks Auto Seller
 // @author       TheBladeRoden
