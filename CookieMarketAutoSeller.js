@@ -60,7 +60,7 @@ async function delayedLoading() {
   while (iteration < 10) {
     console.log("Task cycle working iteration = "+iteration);
     task(iteration);
-     i++;
+     interation++;
 		}
   }
 }
@@ -75,7 +75,7 @@ async function task(iteration) {
         var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[StockId])) / 100;
         console.log(me + ' ' + price);
         }
-    await sleep(1000);
+    await sleep(10000);
 }
 
 
