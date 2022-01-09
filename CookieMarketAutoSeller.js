@@ -56,22 +56,23 @@ async function delayedLoading() {
   await sleep(1000);
   console.log("Load");
   {
-      let i = 0;
-  while (i < 10) {
-    console.log("Task cycle working"+i);
-    task(i);
+      let iteration = 0;
+  while (iteration < 10) {
+    console.log("Task cycle working iteration = "+iteration);
+    task(iteration);
      i++;
 		}
   }
 }
 
-async function task(i) {
+async function task(iteration) {
       let stockMarket = Game.Objects['Bank'].minigame;
     	console.log('Is this working at all?');
-      for(let i = 0; i < stockMarket.goodsById.length; i++) {
-        
-        console.log(stockMarket.goodsById[i].icon);
-        var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[i])) / 100;
+      for(let StockId = 0; StockId < stockMarket.goodsById.length; StockId++) {
+        var me=stockMarket.goodsById[StockId];
+        console.log(stockMarket.goodsById[StockId].icon);
+        console.log(me+me.name);
+        var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[StockId])) / 100;
         console.log(price);
         }
     await sleep(1000);
