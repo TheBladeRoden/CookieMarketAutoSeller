@@ -14,7 +14,7 @@
 
 console.log("Is it even starting to load?");
 
-Game.registerMod
+//Game.registerMod
 //Game.LoadMod('https://klattmose.github.io/CookieClicker/' + (0 ? 'Beta/' : '') + 'CCSE.js');*/
 
 /*const readyCheck = setInterval(() => {
