@@ -48,7 +48,7 @@ delayedLoading();
 
 async function delayedLoading() {
 	await sleep(1000);
-  console.log("It (meaning version 2)");
+  console.log("It (meaning version 3)");
   await sleep(1000);
   console.log("Will");
   await sleep(1000);
