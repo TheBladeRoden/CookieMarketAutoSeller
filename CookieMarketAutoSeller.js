@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Cookie Auto Stonks Auto Seller
-// @Snamespace    http://thebladeroden.com/
+// @Namespace    http://thebladeroden.com/
 // @version      0.1
 // @description  Cookie Auto Stonks Auto Seller
 // @author       TheBladeRoden
@@ -48,7 +48,7 @@ delayedLoading();
 
 async function delayedLoading() {
 	await sleep(1000);
-  console.log("It (meaning version 3)");
+  console.log("It (meaning version 2)");
   await sleep(1000);
   console.log("Will");
   await sleep(1000);
@@ -73,9 +73,10 @@ async function task(iteration) {
         //console.log(stockMarket.goodsById[StockId].icon);
        // console.log(me+me.name);
         var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[StockId])) / 100;
-        console.log(me + ' ' + price);
+        console.log(me.name + ' ' + price);
         }
     await sleep(10000);
+  	console.log('Why arent you sleeping?');
 }
 
 
