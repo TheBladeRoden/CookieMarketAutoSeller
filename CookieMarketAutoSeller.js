@@ -70,10 +70,10 @@ async function task(iteration) {
     	console.log('Is this working at all?');
       for(let StockId = 0; StockId < stockMarket.goodsById.length; StockId++) {
         var me=stockMarket.goodsById[StockId];
-        console.log(stockMarket.goodsById[StockId].icon);
-        console.log(me+me.name);
+        //console.log(stockMarket.goodsById[StockId].icon);
+       // console.log(me+me.name);
         var price = Math.round(100 * stockMarket.getGoodPrice(stockMarket.goodsById[StockId])) / 100;
-        console.log(price);
+        console.log(me + ' ' + price);
         }
     await sleep(1000);
 }
