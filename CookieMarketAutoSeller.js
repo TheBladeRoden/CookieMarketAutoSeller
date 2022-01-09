@@ -60,7 +60,7 @@ async function delayedLoading() {
   while (iteration < 10) {
     console.log("Task cycle working iteration = "+iteration);
     task(iteration);
-     interation++;
+     iteration++;
 		}
   }
 }
