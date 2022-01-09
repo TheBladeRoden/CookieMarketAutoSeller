@@ -7,7 +7,7 @@
 // @match        https://orteil.dashnet.org/cookieclicker/
 // @homepageURL  https://github.com/thebladeroden/CookieMarketAutoSeller
 // @supportURL   https://github.com/thebladeroden/CookieMarketAutoSeller/issues
-// @updateURL    https://raw.githubusercontent.com/TheBladeRoden/CookieMarketAutoSeller/master/CookieMarketAutoSeller.user.js
+// @updateURL    https://thebladeroden.github.io/CookieMarketAutoSeller/CookieMarketAutoSeller.js
 // @icon         https://raw.githubusercontent.com/suicidejerk/Cookie-Stonks/main/cookieDollar.png
 // @include 		https://orteil.dashnet.org/cookieclicker/*
 // ==/UserScript==
